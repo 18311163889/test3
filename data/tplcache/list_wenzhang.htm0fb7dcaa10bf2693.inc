@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("include","",0,35);
+$z[0][4]['filename']="head.htm";
+$z[1]=Array("field","",249,278);
+$z[1][4]['name']="typename";
+$z[2]=Array("type"," -->\r\n<!-- 										<li><a href=\"[field:typelink/]\" title=\"律师加盟利润\">律师加盟利润</a></li> -->\r\n<!-- 										",982,1144);
+$z[2][4]['typeid']="3";
+$z[3]=Array("type","<a href=\"[field:typelink/]\" title=\"[field:typename /]\">[field:typename /]</a>",1155,1266);
+$z[3][4]['typeid']="1";
+$z[4]=Array("type","<a href=\"[field:typelink/]\" title=\"[field:typename /]\">[field:typename /]</a>",1278,1389);
+$z[4][4]['typeid']="2";
+$z[5]=Array("type","<a href=\"[field:typelink/]\" title=\"[field:typename /]\">[field:typename /]</a>",1401,1512);
+$z[5][4]['typeid']="3";
+$z[6]=Array("type","<a href=\"[field:typelink/]\" title=\"[field:typename /]\">[field:typename /]</a>",1524,1635);
+$z[6][4]['typeid']="4";
+$z[7]=Array("type","<a href=\"[field:typelink/]\" title=\"[field:typename /]\">[field:typename /]</a>",1647,1758);
+$z[7][4]['typeid']="5";
+$z[8]=Array("type","<a href=\"[field:typelink/]\" title=\"[field:typename /]\">[field:typename /]</a>",1770,1881);
+$z[8][4]['typeid']="6";
+$z[9]=Array("type","<a href=\"[field:typelink/]\" title=\"[field:typename /]\">[field:typename /]</a>",1893,2004);
+$z[9][4]['typeid']="7";
+$z[10]=Array("type","<a href=\"[field:typelink/]\" title=\"[field:typename /]\">[field:typename /]</a>",2016,2127);
+$z[10][4]['typeid']="8";
+$z[11]=Array("arclist","\r\n                                        <li><a href=\"[field:arcurl /]\">[field:title/]</a></li>\r\n                                        ",2401,2610);
+$z[11][4]['row']="5";
+$z[11][4]['typeid']="all";
+$z[11][4]['orderby']="pubdate’";
+$z[12]=Array("list","\r\n                                            <div class=\"one\">\r\n                                                 <a href=\"[field:arcurl/]\" target=\"_blank\"><h3>[field:title/]</h3></a>\r\n                                                <p><a href=\"[field:arcurl/]\" target=\"_blank\" title=\"[field:title/]\">[field:description function=\"cn_substr(@me,200)\"/]...</a></p>\r\n                                                <a href=\"[field:arcurl/]\" style=\"float:right;color:red\">查看详情</a>\r\n                                                <div style=\"width:466px;\"><!--<img src=\"{dede:global.cfg_templets_skin/}/img/l8.jpg\">--></div>\r\n                                            </div>\r\n                                            ",3276,4055);
+$z[12][4]['pagesize']="6";
+$z[12][4]['orderby']="pubdate";
+$z[13]=Array("pagelist","",4262,4333);
+$z[13][4]['listitem']="info,index,end,pre,next,pageno";
+$z[13][4]['listsize']="5";
+$z[14]=Array("likeart","\r\n                                                    <li>\r\n                                                        <a href=\"[field:arcurl/]\" target=\"_blank\" title=\"[field:title/]\"><img src=\"[field:picname/]\" alt=\"[field:title /]\"/></a>\r\n                                                        <div class=\"lr_r\">\r\n                                                            <span class=\"title \"><a href=\"[field:arcurl /]\" target=\"_blank\" title=\"\">[field:title /]</a></span>\r\n                                                            <div class=\"txt\"><a href=\"[field:arcurl/]\" target=\"_blank\" title=\"[field:title/]\">[field:description function=\"cn_substr(@me,80)\"/]...</a><a href=\"[field:arcurl /]\" target=\"_blank\" title=\"[field:title function='htmlspecialchars(@me)'/] \" style=\"color:red\" >详细</a></div>\r\n                                                        </div>\r\n                                                    </li>\r\n                                                    ",5316,6364);
+$z[14][4]['titlelen']="26";
+$z[14][4]['row']="5";
+$z[14][4]['orderby']="ID";
+$z[15]=Array("global","",6462,6494);
+$z[15][4]['name']="cfg_templets_skin";
+$z[16]=Array("include","",7057,7095);
+$z[16][4]['filename']="footer2.htm";
+
+?>

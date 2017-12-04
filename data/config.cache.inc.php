@@ -2,9 +2,9 @@
 $cfg_disable_funs = 'phpinfo,eval,exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source,file_put_contents';
 $cfg_disable_tags = 'php';
 $cfg_basehost = 'http://localhost';
-$cfg_cmspath = '/ceshi';
+$cfg_cmspath = '/test3';
 $cfg_cookie_encode = 'NX9dwYT68YkGEINvMwgvIDHoBLya9Pg';
-$cfg_indexurl = '/ceshi';
+$cfg_indexurl = '/test3';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '主页';
 $cfg_webname = '我的网站';
@@ -154,4 +154,8 @@ $cfg_memcache_mc_oth = '';
 $cfg_cross_sectypeid = 'N';
 $cfg_digg_update = 0;
 $cfg_feedback_guest = 'N';
+$cfg_mobile_reg = 'Y';
+$cfg_smsbao_name = '';
+$cfg_smsbao_password = '';
+$cfg_smsbao_sign = '';
 ?>
