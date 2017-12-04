@@ -1,0 +1,108 @@
+{dede:include filename="head.htm"/}
+<style>h3{font-family:'微软雅黑'}
+a:hover{text-decoration:none;}
+</style>
+<!--内容开始-->
+<div class="listbox">
+    <div class="list_nav">
+        <a href="/">建筑工程律师网</a><span>></span>{dede:field name='typename'/}
+    </div>
+    <div class="list_con">
+        <!--左侧内容开始-->
+        <table width="1200" height="738" border="0" align="center" cellpadding="0" cellspacing="0" id="__01">
+            <tbody><tr>
+                <td valign="top" bgcolor="#F9F9F9">
+                    <table id="Table3" width="168" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <td valign="top">
+                                <div class="li_l">
+                                    <div class="lr_title">相关导航</div>
+                                    <ul class="li_con">
+<!--                                         {dede:type typeid='3'} -->
+<!-- 										<li><a href="[field:typelink/]" title="律师加盟利润">律师加盟利润</a></li> -->
+<!-- 										{/dede:type}  -->
+<li>{dede:type typeid='1'}<a href="[field:typelink/]" title="[field:typename /]">[field:typename /]</a>{/dede:type} </li>
+<li>{dede:type typeid='2'}<a href="[field:typelink/]" title="[field:typename /]">[field:typename /]</a>{/dede:type} </li>
+<li>{dede:type typeid='3'}<a href="[field:typelink/]" title="[field:typename /]">[field:typename /]</a>{/dede:type} </li>
+<li>{dede:type typeid='4'}<a href="[field:typelink/]" title="[field:typename /]">[field:typename /]</a>{/dede:type} </li>
+<li>{dede:type typeid='5'}<a href="[field:typelink/]" title="[field:typename /]">[field:typename /]</a>{/dede:type} </li>
+<li>{dede:type typeid='6'}<a href="[field:typelink/]" title="[field:typename /]">[field:typename /]</a>{/dede:type} </li>
+<li>{dede:type typeid='7'}<a href="[field:typelink/]" title="[field:typename /]">[field:typename /]</a>{/dede:type} </li>
+<li>{dede:type typeid='8'}<a href="[field:typelink/]" title="[field:typename /]">[field:typename /]</a>{/dede:type} </li>
+                                        
+
+                                    </ul>
+                                    <div class="li_title">最新相关信息</div>
+                                    <ul class="li_c">
+                                        {dede:arclist row='5' typeid='all'  orderby='pubdate’}
+                                        <li><a href="[field:arcurl /]">[field:title/]</a></li>
+                                        {/dede:arclist}
+                                    </ul>
+                                </div>
+                            </td>
+                            <td valign="top">
+                                <table id="Table8" width="955" height="584" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody><tr>
+                                        <td width="32">
+                                        </td>
+                                        <td valign="top" width="635">
+                                            <!--列表内容开始-->                                       
+                                            {dede:list pagesize='6'orderby='pubdate'}
+                                            <div class="one">
+                                                 <a href="[field:arcurl/]" target="_blank"><h3>[field:title/]</h3></a>
+                                                <p><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:description function="cn_substr(@me,200)"/]...</a></p>
+                                                <a href="[field:arcurl/]" style="float:right;color:red">查看详情</a>
+                                                <div style="width:466px;"><!--<img src="{dede:global.cfg_templets_skin/}/img/l8.jpg">--></div>
+                                            </div>
+                                            {/dede:list}
+                                            <!--列表内容结束-->
+
+                                            <ul class="fybox" style="margin: 0 auto">
+                               
+												{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+                               
+											 </ul>
+															
+															
+											</div>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td valign="top">
+                                            <div class="list_r">
+                                                <div class="lr_title">相关资讯</div>
+                                                <!-- <form action="" class="list-input">
+                                                     <input type="text" name="list_in" value=""/>
+                                                     <input type="submit" value="文章搜索" style="padding:0 4px;font-size: 12px; height:22px; line-height:22px; width:60px;"/>
+                                                 </form>-->
+                                                <ul class="lr_con2">
+                                                    {dede:likeart titlelen='26' row='5' orderby=ID }
+                                                    <li>
+                                                        <a href="[field:arcurl/]" target="_blank" title="[field:title/]"><img src="[field:picname/]" alt="[field:title /]"/></a>
+                                                        <div class="lr_r">
+                                                            <span class="title "><a href="[field:arcurl /]" target="_blank" title="">[field:title /]</a></span>
+                                                            <div class="txt"><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:description function="cn_substr(@me,80)"/]...</a><a href="[field:arcurl /]" target="_blank" title="[field:title function='htmlspecialchars(@me)'/] " style="color:red" >详细</a></div>
+                                                        </div>
+                                                    </li>
+                                                    {/dede:likeart}
+
+                                                       <!-- <div class="lr_picture"><img src="{dede:global.cfg_templets_skin/}/img/l10.jpg" alt=""></div>-->
+                    
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </td>
+                        </tr>
+                        </tbody></table>
+                </td>
+            </tr>
+            </tbody></table>
+        <!--右侧内容开始-->
+
+    </div>
+</div>
+<!--底部开始-->
+{dede:include filename="footer2.htm"/}
+</body>

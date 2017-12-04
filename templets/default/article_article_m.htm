@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}</title>
+		<meta name="keywords" content="{dede:field.keywords/}"/>
+        <meta name="description" content="{dede:field.description function='html2text(@me)'/}"/>
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+  
+ <meta name="applicable-device" content="mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/assets/css/style.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/assets/css/style1.css">
+<script src="{dede:global.cfg_templets_skin/}/assets/js/jquery.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/assets/js/custom.js"></script>
+
+<script type="text/javascript">
+	function loadImages() {
+		if (document.getElementById) {  // DOM3 = IE5, NS6
+			document.getElementById('hidepage').style.visibility = 'hidden';
+		}else {
+		if (document.layers) {  // Netscape 4
+			document.hidepage.visibility = 'hidden';
+		}else {  // IE 4
+			document.all.hidepage.style.visibility = 'hidden';
+		  }
+	   }
+	}
+</script>
+	<style>
+	.san_tl strong{font-size:14px;}
+	#container{position: absolute;width: 100%;}
+		@media screen and (max-width: 800px) {
+			.containerbox{width:100%;}  .tu_box li{margin-right:45px;width: 46%;}
+		.con_f2 li{padding: 10px 26px !important;margin-left: 4% !important;}
+}
+@media screen and (max-width: 480px) {
+.tu_box li{margin-right:25px;width: 46%;}.containerbox{width:100%;}
+}
+@media screen and (max-width: 380px) {
+.containerbox{width:100%;} .head_tel{right: 16%;width: 40%;}.tu_box{width: 86%;}.tu_box li{width: 45.8%;}
+.san_tl strong{display: block;}
+.con_f2 li{padding: 10px 18px;}
+}
+@media screen and (min-width: 380px)and (max-width: 420px) {
+.containerbox{width:100%;} .head_tel{right: 13%;}
+}
+@media screen and (max-width: 320px) {
+.containerbox{width:100%;} .head_tel{right: 13%;width: 46%;}.tu_box{width: 90%;}.tu_box li{width: 45.6%;}
+.san_tl strong{display: block;}
+.con_f2 li{padding: 10px 16px;margin-left: 3%;}.l_san ul li{width: 31.1%;}
+}
+	.con_box img{width:100% !important;}
+	</style>
+</head>
+<body>
+<!-- 侧滑导航根容器 -->
+
+<div class="content">
+	<div class="header" >
+    	<a href="index.html"><img src="{dede:global.cfg_templets_skin/}/assets/images/logo.png" class="replace-2x" width="108" height="44" alt="logo"></a>
+    	<a class="head_tel" href="tel:13691356339"><img src="{dede:global.cfg_templets_skin/}/assets/images/tel.png"><p>136-9135-6339</p></a>
+        <a href="#" class="open-content"></a>
+        <a href="#" class="close-content"></a>
+    </div>
+    
+<!--四块分类开始-->
+<div class="fl_box">
+        <div class="fl-con2">
+            <a href="/gongshangsuopei" style="width:25%;float: left;margin-bottom: 25px;"><img src="{dede:global.cfg_templets_skin/}/assets/images/l1.png" alt="工伤索赔"><span>工伤索赔</span></a>
+            <a href="/gongchengzhiliang" style="width:25%;float: left;margin-bottom: 25px;"><img src="{dede:global.cfg_templets_skin/}/assets/images/l2.png" alt="工程质量"><span>工程质量</span></a>
+            <a href="/falvfagui" style="width:25%;float: left;margin-bottom: 25px;"><img src="{dede:global.cfg_templets_skin/}/assets/images/l3.png" alt="法律法规"><span>法律法规</span></a>
+            <a href="/chenggonganli" style="width:25%;float: left;margin-bottom: 25px;"><img src="{dede:global.cfg_templets_skin/}/assets/images/l4.png" alt="成功案例"><span>成功案例</span></a>
+        </div>
+    </div>
+<!--四块分类结束-->
+<!--列表内容开始-->
+<div class="m_list">
+   <div class="m_list2"><span><a href="/">建筑工程律师网>></a><a href="{dede:type typeid='0' row=1}[field:typelink /]{/dede:type}">{dede:field.typename/}</a>>>{dede:field.title/}</span>
+</div>
+</div>
+
+<!--内容开始-->
+<div class="contentbox">
+	<h1>{dede:field.title/}</h1>
+	<div class="con_img"></div>
+	<div class="con_box">
+		<div class="con_size"></div>
+		{dede:field.body function='str_replace("\"/uploads/","\"http://www.jianzhulvshi.cn/uploads/",@me) /}
+	</div>
+	<div class="con_f">
+	{dede:prenext get='prem'/} <br>
+    {dede:prenext get='nextm'/}
+	</div>
+</div>
+<!--留言板开始-->
+<div id="cont">
+ <div class="title">在线留言，律师将会第一时间与您联系！</div>
+   <form id="form2" name="form2" method="post" style="width:100%;" action="http://www.jianzhulvshi.cn/plus/diy.php" enctype="multipart/form-data" onSubmit='return Checkfeedback();'>
+  
+    <input type="hidden" name="action" value="post">
+                    <input type="hidden" name="diyid" value="1">
+                    <input type="hidden" name="do" value="2">
+     <div class="xm">
+     <label class="titlelabel">*姓名</label>
+     <input type="text" class="simpleinput" id="name" name="name" placeholder="请输入您的姓名">
+     </div>
+     <div class="xm">
+     <label class="titlelabel">*电话</label>
+     <input type="text" class="simpleinput" id="tel" name="tel" placeholder="请填写您的手机号码">
+     </div>
+     <div class="xm">
+     <label class="titlelabel">留言</label>
+      <select class="messagePick" onchange="messageReveal()" name="message" id="message">
+         <option value="法律咨询,请尽快联系">想要咨询,请尽快联系</option> 
+	 </select>
+<input name="time" value="" type="hidden"  id="time"  /><!-- 如不需要在前台显示的话可以修改type="hidden" -->
+					<input name="ip" id="ip" value="" type="hidden">
+					<input name="laiyuanyemian" id="laiyuanyemian" value="m{dede:field.id runphp='yes'}$id=@me;@me='';
+	$url=GetOneArchive($id);
+	@me=$url['arcurl'];
+	{/dede:field.id}" type="hidden">
+      <script type="text/javascript">
+
+                    window.onload = function(){
+
+                    var nowDate = new Date();
+
+                    var str = nowDate.getFullYear()+"-"+(nowDate.getMonth() + 1)
+
++"-"+nowDate.getDate()+" "+nowDate.getHours()+":"+nowDate.getMinutes()
+
++":"+nowDate.getSeconds();
+
+                    document.getElementById("time").value=str;
+
+                    }
+
+                    </script>
+</div>
+<input type="hidden" name="dede_fields" value="name,text;tel,text;message,multitext;sex,radio;time,text;ip,text;laiyuanyemian,text" />
+<input type="hidden" name="dede_fieldshash" value="c4c8e63fecf6c68ef72f66619e3fd205" />
+     <input name="button2" type="submit" class="simplebutton-forforms" id="button2" value="立即提交留言">
+   </form>
+ </div>
+<div class="con_f2">
+	<h2>您可能感兴趣：</h2>
+	<ul>
+		<li style="margin-left: 0;"><a href="/gongchengkuan" ><span>工程款</span></a></li>
+		<li><a href="/gongchengfenbao"><span>工程分包与转包</span></a></li>
+		<li><a href="/gongshangsuopei"><span>工伤索赔</span></a></li>
+		<li style="margin-left: 0;"><a href="/gongchengzhiliang"><span>工程质量</span></a></li>
+		<li><a href="/gongchenghetongjiufen"><span>建设工程合同纠纷</span></a></li>
+		<li><a href="/gongchenglaowuhetongjiufen"><span>工程劳务合同纠纷</span></a></li>	
+		<li><a href="/falvfagui" ><span>法律法规</span></a></li>
+		<li><a href="/chenggonganli" ><span>成功案例</span></a></li>
+	</ul>
+</div>
+<!--内容结束-->
+<!--三块内容开始-->
+<div class="l_san">
+         <ul>
+            <li>
+			    <a href="/chenggonganli/42.html"><div class="san_tl">工伤索赔<br><strong>案例</strong></div></a>
+                <a href="/chenggonganli/42.html"><img src="{dede:global.cfg_templets_skin/}/assets/images/san1.jpg" alt=""></a>
+            </li>
+            <li>
+			    <a href="/chenggonganli/44.html"><div class="san_tl">建设工程合同纠纷<br><strong>案例</strong></div></a>
+                <a href="/chenggonganli/44.html"><img src="{dede:global.cfg_templets_skin/}/assets/images/san2.jpg" alt=""></a>
+            </li>
+            <li style="border-right: 0;">
+			    <a href="/chenggonganli/41.html"><div class="san_tl">工程劳务合同纠纷<br><strong>案例</strong></div></a>
+                <a href="/chenggonganli/41.html"><img src="{dede:global.cfg_templets_skin/}/assets/images/san3.jpg" alt=""></a>
+			</li>
+        </ul>
+    </div>
+<!--三块内容结束-->
+
+<!--底部开始-->
+
+<div class="bottom_box">
+	<a class="b_tel" href="#">
+    	<div class="b_tel2">
+        	<img src="{dede:global.cfg_templets_skin/}/assets/images/home.png" alt="返回顶部"style="width:18px;height: 18px;">
+            <p class="b_tel3">返回顶部</p>
+            <div class="c"></div>
+        </div>
+    </a>
+    <a class="b_tel" href="tel:13691356339" style="border-right: 0;">
+    	<div class="b_tel2">
+        	<img src="{dede:global.cfg_templets_skin/}/assets/images/tel2.png" alt="电话咨询" style="width:18px;height: 18px;">
+            <p class="b_tel3">电话咨询</p>
+            <div class="c"></div>
+        </div>
+    </a>
+    <div class="c"></div>
+</div>
+{dede:include filename="footer_m.htm"/}
+</div>
+<!--底部结束-->
+{dede:include filename="top_m.htm"/}
+<script type="text/javascript">
+                function Checkfeedback() {
+                    if (document.form2.name.value.length == 0) {
+                        alert('您的姓名 不能为空');
+                        document.form2.name.focus();
+                        return false;
+                    }
+
+                    if (document.form2.tel.value.length == 0) {
+                        alert('手机 不能为空');
+                        document.form2.tel.focus();
+                        return false;
+                    }
+
+                }
+            </script>
+</body>
+</html>

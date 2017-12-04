@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网页基础  /  Javascript/Ajax_我的网站</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/ceshi/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/ceshi/m/list.php?tid=4">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/ceshi/m/list.php?tid=4";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+</head>
+<body class="articlelist">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的网站</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="applicable-device" content="pc"> 
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="http://m.jianzhulvshi.cn"+location.pathname+location.search;}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/ceshi/templets/default/css/style.css">
+    <link rel="stylesheet" href="/ceshi/templets/default/css/style2.css">
+    <link rel="stylesheet" href="/ceshi/templets/default/css/css.css">
+	 <link rel="stylesheet" href="/ceshi/templets/default/css/luara.left.css">
+    <script type="text/javascript" src="/ceshi/templets/default/js/jquery-1.4.2.js"></script>
+	<script type="text/javascript" src="/ceshi/templets/default/js/jquery-1.8.3.min.js"></script>
+	 <script src="/ceshi/templets/default/js/jquery.luara.0.0.1.min.js"></script>
+    
+	<style>
+/*pages*/
+.pagination-wrapper{
+margin: 20px 0;
+}
+.pagination{
+height: 34px;
+text-align: center;
+}
+.pagination li {
+display: inline-block;
+height: 34px;
+margin-right: 5px;
+}
+.pagination li a{
+float: left;
+display: block;
+height: 32px;
+line-height: 32px;
+padding: 0 12px;
+font-size: 16px;
+border: 1px solid #dddddd;
+color: #555555;
+text-decoration: none;
+}
+.pagination li a:hover{
+background:#f5f5f5;
+color:#0099ff;
+}
+.pagination li.thisclass {
+background: #09f;
+color: #fff;
+}
+.pagination li.thisclass a,.pagination li.thisclass a:hover{
+background: transparent;
+border-color: #09f;
+color: #fff;
+cursor: default;
+}
+@media (max-width: 1200px){.footer_bottom_con {width: 94%;}}
+@media (max-width: 840px){.footer_bottom_con {width: 90%;}.slider{height:250px;}}
+@media (max-width: 840px){.footer_bottom_con {width: 90%;}}
+
+</style>
+</head>
+<body>
+<!--头部开始-->
+<div class="j_top">
+    <div class="jftb">
+        <div class="logo"><a href="/"><img src="/ceshi/templets/default/img/logo.png" alt="网站首页" border="0" width="369" height="105"></a></div>
+        <div class="lxfs">免费咨询热线<br><span>136-9135-6339</span></div>
+    </div>
+    <div class="j_nav">
+        <ul>
+            <li><a href="/ceshi/" title="网站首页">网站首页</a> </li>
+<!--            <li><a href="/ceshi/a/webbase/dreamweaver/" title="">Dreamweaver</a> </li> -->
+           <li class='nav_view'><a href='/ceshi/a/webbase/'>网页基础</a> </li> 
+           <li><a href='/ceshi/a/pics/'>站长图集</a> </li> 
+           
+           <li><a href='/ceshi/a/downloads/'>软件下载</a> </li> 
+           
+           <li><a href='/ceshi/a/shops/'>商品销售</a> </li> 
+           
+           <li><a href='/ceshi/a/infos/'>分类信息</a> </li> 
+           
+           <li><a href='http://www.dedecms.com'>织梦CMS</a> </li> 
+           
+           <li><a href='http://docs.dedecms.com'>帮助文档</a> </li> 
+          
+      
+        </ul>
+    </div>
+</div>
+<!-- /header -->
+<div class="w960 center clear mt1">
+ <div class="pleft">
+  <div class="place"> <strong>当前位置:</strong> <a href='http://localhost/ceshi'>主页</a> > <a href='/ceshi/a/webbase/'>网页基础</a> > <a href='/ceshi/a/webbase/javascript-ajax/'>Javascript/Ajax</a> >  </div>
+  <!-- /place -->
+  <div class="listbox">
+   <ul class="e2">
+    <li> <a href='/ceshi/a/webbase/javascript-ajax/2010/0407/34.html' class='preview'><img src='/ceshi/images/defaultpic.gif'/></a>
+     [<b><a href='/ceshi/a/webbase/javascript-ajax/'>Javascript/Ajax</a></b>] <a href="/ceshi/a/webbase/javascript-ajax/2010/0407/34.html" class="title">JavaScript风格要素</a> <span class="info"> <small>日期：</small>2010-04-07 09:36:53 <small>点击：</small>0 <small>好评：</small>0 </span>
+     <p class="intro"> 关于英文的写作有一本十分著名的书，The Elements of Style（风格要素），编写程序也有一本The Elements of Programming Style（编程风格要素）。证明了在某种程度上，编写程序其实就是语文写作，清晰的风格对程序的质量有着重要的影响。草率含混的风格会隐蔽... </p>
+    </li><li> <a href='/ceshi/a/webbase/javascript-ajax/2010/0407/44.html' class='preview'><img src='/ceshi/images/defaultpic.gif'/></a>
+     [<b><a href='/ceshi/a/webbase/javascript-ajax/'>Javascript/Ajax</a></b>] <a href="/ceshi/a/webbase/javascript-ajax/2010/0407/44.html" class="title">网页中常用的Javascript代码</a> <span class="info"> <small>日期：</small>2010-04-07 09:36:53 <small>点击：</small>0 <small>好评：</small>0 </span>
+     <p class="intro"> JavaScript技术可以实现交互式页面，在建立动态页面方面有着其他工具不可比拟的优点。Javascript 在网页设计中,大部分都是用来实现功能,特效的.. 本文列举了一些网页制作中常用的JavaScript技术：... </p>
+    </li><li> <a href='/ceshi/a/webbase/javascript-ajax/2010/0407/45.html' class='preview'><img src='/ceshi/images/defaultpic.gif'/></a>
+     [<b><a href='/ceshi/a/webbase/javascript-ajax/'>Javascript/Ajax</a></b>] <a href="/ceshi/a/webbase/javascript-ajax/2010/0407/45.html" class="title">Javascript优化原则</a> <span class="info"> <small>日期：</small>2010-04-07 09:36:53 <small>点击：</small>0 <small>好评：</small>0 </span>
+     <p class="intro"> 首先，与其他语言不同，JS的效率很大程度是取决于JS engine的效率。除了引擎实现的优劣外，引擎自己也会为一些特殊的代码模式采取一些优化的策略。显然，要获得最大效率，就必须要了解引擎的脾气，尽量迎合引擎的口味。所以对于不同的引擎，所作的优化极有可... </p>
+    </li><li> <a href='/ceshi/a/webbase/javascript-ajax/2010/0407/46.html' class='preview'><img src='/ceshi/images/defaultpic.gif'/></a>
+     [<b><a href='/ceshi/a/webbase/javascript-ajax/'>Javascript/Ajax</a></b>] <a href="/ceshi/a/webbase/javascript-ajax/2010/0407/46.html" class="title">讨论Ajax之所以优于JSF的原因</a> <span class="info"> <small>日期：</small>2010-04-07 09:36:53 <small>点击：</small>0 <small>好评：</small>0 </span>
+     <p class="intro"> Sun为什么会搞出一个JSF，JSF为什么会是现在这个样子，我想原因是这样的: 首先，基于组件的Web开发将来会是一个趋势。自包含的组件便于IDE的处理，可以提高开发效率。... </p>
+    </li><li> <a href='/ceshi/a/webbase/javascript-ajax/2010/0407/47.html' class='preview'><img src='/ceshi/images/defaultpic.gif'/></a>
+     [<b><a href='/ceshi/a/webbase/javascript-ajax/'>Javascript/Ajax</a></b>] <a href="/ceshi/a/webbase/javascript-ajax/2010/0407/47.html" class="title">警惕AJAX应用开发中的轻罪和死罪</a> <span class="info"> <small>日期：</small>2010-04-07 09:36:53 <small>点击：</small>0 <small>好评：</small>0 </span>
+     <p class="intro"> AJAX bandwagon是个好去处。它能为您提供更快捷高效，动态更强的应用。但是它也有自己的缺陷。... </p>
+    </li><li> <a href='/ceshi/a/webbase/javascript-ajax/2010/0407/48.html' class='preview'><img src='/ceshi/images/defaultpic.gif'/></a>
+     [<b><a href='/ceshi/a/webbase/javascript-ajax/'>Javascript/Ajax</a></b>] <a href="/ceshi/a/webbase/javascript-ajax/2010/0407/48.html" class="title">如何用jQuery简化JavaScript开发</a> <span class="info"> <small>日期：</small>2010-04-07 09:36:53 <small>点击：</small>0 <small>好评：</small>0 </span>
+     <p class="intro"> jQuery是我最近发现的一个新工具。jQuery开发团队形容jQuery是“一个快捷、简练的JavaScript库，它可以简化HTML文档检查、事件处理、动画执行、并给你的Web页面增加AJAX交互。”... </p>
+    </li><li> <a href='/ceshi/a/webbase/javascript-ajax/2010/0407/49.html' class='preview'><img src='/ceshi/images/defaultpic.gif'/></a>
+     [<b><a href='/ceshi/a/webbase/javascript-ajax/'>Javascript/Ajax</a></b>] <a href="/ceshi/a/webbase/javascript-ajax/2010/0407/49.html" class="title">使用mashups可能会给用户带来不好体验</a> <span class="info"> <small>日期：</small>2010-04-07 09:36:53 <small>点击：</small>0 <small>好评：</small>0 </span>
+     <p class="intro"> 最近，老板在我们公司使用了一种网络内容过滤设备。至今为止，他们对该设备进行了良好的设置。在使用我的办公用计算机浏览网页时，经过该设备进行了网页内容过滤的Web世界就大为不同了。... </p>
+    </li><li> <a href='/ceshi/a/webbase/javascript-ajax/2010/0407/50.html' class='preview'><img src='/ceshi/images/defaultpic.gif'/></a>
+     [<b><a href='/ceshi/a/webbase/javascript-ajax/'>Javascript/Ajax</a></b>] <a href="/ceshi/a/webbase/javascript-ajax/2010/0407/50.html" class="title">如何用JavaScript实现旋转木马</a> <span class="info"> <small>日期：</small>2010-04-07 09:36:53 <small>点击：</small>0 <small>好评：</small>0 </span>
+     <p class="intro"> Flash动画可以让Web网站看起来很漂亮，但是由于各种原因不是每个人都会在自己的客户端浏览器上安装Flash播放器。如果你或者你的用户不幸安装了64位的Linux发行版，或者你痛恨在自己的Web页面上放动画，那么你就不得不面对没有Flash动画的情况了。... </p>
+    </li><li> <a href='/ceshi/a/webbase/javascript-ajax/2010/0407/51.html' class='preview'><img src='/ceshi/images/defaultpic.gif'/></a>
+     [<b><a href='/ceshi/a/webbase/javascript-ajax/'>Javascript/Ajax</a></b>] <a href="/ceshi/a/webbase/javascript-ajax/2010/0407/51.html" class="title">设计与应用JavaScript对象符号JSON</a> <span class="info"> <small>日期：</small>2010-04-07 09:36:53 <small>点击：</small>0 <small>好评：</small>0 </span>
+     <p class="intro"> XML是作为一种数据交换工具开发并推出的，但并不是所有开发者都支持这一工具。实际上一些开发者选择开发其它工具。JSON（JavaScript对象符号）就是其中之一。在本文中，我们来详细了解一下JSON的设计与应用。... </p>
+    </li><li> <a href='/ceshi/a/webbase/javascript-ajax/2010/0407/52.html' class='preview'><img src='/ceshi/images/defaultpic.gif'/></a>
+     [<b><a href='/ceshi/a/webbase/javascript-ajax/'>Javascript/Ajax</a></b>] <a href="/ceshi/a/webbase/javascript-ajax/2010/0407/52.html" class="title"><b>完全了解AJAX</b></a> <span class="info"> <small>日期：</small>2010-04-07 09:36:53 <small>点击：</small>0 <small>好评：</small>0 </span>
+     <p class="intro"> 尽管AJAX是个相对新生的术语，但其背后的技术却并不新颖。我们从基础开始认识AJAX，一种颠覆性的技术，其改变了Web应用程序的开发和应用方式，使得交互性页面和网站处于目前网络潮流的最前沿。... </p>
+    </li>
+   </ul>
+  </div>
+  <!-- /listbox -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    <li>首页</li>
+<li class="thisclass">1</li>
+<li><a href='list_4_2.html'>2</a></li>
+<li><a href='list_4_2.html'>下一页</a></li>
+<li><a href='list_4_2.html'>末页</a></li>
+<li><select name='sldd' style='width:36px' onchange='location.href=this.options[this.selectedIndex].value;'>
+<option value='list_4_1.html' selected>1</option>
+<option value='list_4_2.html'>2</option>
+</select></li>
+<li><span class="pageinfo">共 <strong>2</strong>页<strong>20</strong>条</span></li>
+
+   </ul>
+  </div>
+  <!-- /pages -->
+ </div>
+ <!-- /pleft -->
+ <div class="pright">
+  <div>
+   <dl class="tbox">
+    <dt><strong>栏目列表</strong></dt>
+    <dd>
+     <ul class="d6">
+      
+      <li><a href='/ceshi/a/webbase/html/'>HTML</a></li>
+      
+      <li><a href='/ceshi/a/webbase/div-css/'>DIV&CSS</a></li>
+      <li><a href='/ceshi/a/webbase/javascript-ajax/' class='thisclass'>Javascript/Ajax</a></li>
+      <li><a href='/ceshi/a/webbase/dreamweaver/'>Dreamweaver</a></li>
+      
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div id="listRtPicAD" style="margin:10px auto"><!-- 250x250启用SSP 开始 --><script type="text/javascript">var _mda_place_id ="58bcc82381892";</script><script type="text/javascript" src="http://place.ssp.desdev.cn/pageplace/show.js"></script><!-- 250x250启用SSP 结束 --></div>
+  <div class="commend">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      <li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/52.html">完全了解AJAX</a>
+       <p>尽管AJAX是个相对新生的术语，但其背后的技术却并不新颖。我们...</p>
+      </li>
+<li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/43.html">JavaScript的9个陷阱及评点</a>
+       <p>来自Nine Javascript Gotchas, 以下是JavaScript容易犯错的九个陷阱。虽...</p>
+      </li>
+<li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/35.html">用JavaScript的日期对象操控时间和日</a>
+       <p>软件开发中一个比较棘手的内容是使用时间和日期值；似乎每种...</p>
+      </li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1 light">
+   <dl class="tbox">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/39.html">Web2.0十大Ajax安全漏洞以及</a></li>
+<li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/34.html">JavaScript风格要素</a></li>
+<li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/35.html">用JavaScript的日期对象操控</a></li>
+<li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/36.html">减轻JavaScript测试和调试负</a></li>
+<li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/37.html">使用AJAX技术的十大理由</a></li>
+<li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/38.html">Ajax 技术入门简介</a></li>
+<li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/40.html">JavaScript开发时的五个小提</a></li>
+<li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/41.html">JavaScript：世界上误解最深</a></li>
+<li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/42.html">JavaScript基础知识总结</a></li>
+<li><a href="/ceshi/a/webbase/javascript-ajax/2010/0407/43.html">JavaScript的9个陷阱及评点</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+    <a href='http://2v.dedecms.com/' id='__dedeqrcode_1'>织梦二维码生成器</a>
+  <script type="text/javascript">
+  	var __dedeqrcode_id=1;
+  	var __dedeqrcode_aid=4;
+  	var __dedeqrcode_type='list';
+  	var __dedeqrcode_dir='/ceshi/plus';
+  </script>
+  <script language="javascript" type="text/javascript" src="/ceshi/plus/img/qrcode.js"></script>
+  <div id="listRtPicAD2" style="margin:10px auto"><!-- 250x250普通 开始 --><script type="text/javascript">var _mda_place_id ="58bcc92e8b472";</script><script type="text/javascript" src="http://place.ssp.desdev.cn/pageplace/show.js"></script><!-- 250x250普通 结束 --></div>
+ </div>
+ <!-- /pright -->
+</div>
+<div id="innerfooterAD" style="margin:10px auto; width:726px"><!-- 728x90普通 开始 --><script type="text/javascript">var _mda_place_id ="58bce8309bc21";</script><script type="text/javascript" src="http://place.ssp.desdev.cn/pageplace/show.js"></script><!-- 728x90普通 结束 --></div>
+<!--底部开始-->
+<div class="j_footer_bg">
+    <div class="j_footer">
+        <div class="j_youqing">
+            <div class="friendlink">
+                <div class="linkmenu">
+                    <div onmouseover="tabChange(this,'link')" class="cli">友情链接</div>
+                    <!-- <li onmouseover="tabChange(this,'link')">友链链接</li>-->
+                </div>
+                <div id="link">
+                    <ul>
+                      <li>  <li><a href='http://www.dedecms.com' target='_blank'>织梦CMS官方</a> </li><li><a href='http://docs.dedecms.com/' target='_blank'>DedeCMS维基手册</a> </li><li><a href='http://bbs.dedecms.com' target='_blank'>织梦技术论坛</a> </li></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="j_footer_bottom">
+    <div class="footer_bottom_con">
+        <div class="j_footer_bottom_left">
+            <p> 版权所有</p>
+<!--             <p>公司地址：北京市丰台区梅市口路万客国际大厦（北京新丰汽车驾驶学校北门东100米）</p>  -->
+        </div>
+        <div class="j_footer_bottom_right">
+            <p>免费咨询热线: </p>
+            <p><b style="color: #fff;">136-9135-6339</b> </p>
+            <!--   <div style="width:300px;margin:0 auto; padding:20px 0;">
+                   <a target="_blank" href="" rel="nofollow" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                       <img src="" style="float:left;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011402001173号</p>
+                   </a>
+               </div>-->
+        </div>
+    </div>
+</div>
+
+<!-- 百度统计
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b7657cb9f7522b3f8a6c69fba2e45e05";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+百度推送代码
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script> -->
+<!-- /footer -->
+</body>
+</html>
